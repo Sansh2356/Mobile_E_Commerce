@@ -1,0 +1,26 @@
+:root{
+  --mainBlue:#18c338;
+  --lightBlue:#009ffd;
+  --mainWhite:white;
+  --mainDark:black;
+  --mainYellow:yellow;
+
+}
+body{
+  font-family: 'Playfair Display', serif !important;
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
+}
+
+.text-title{
+  font-family: 'Sriracha', cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.text-blue{
+  color:var(--mainBlue);
+}
+.text-bright{
+  color: var(--lightBlue);
+}
