@@ -1,4 +1,4 @@
-import { Error, Navbar } from "./Components/Components";
+import { Error, Navbar, Products } from "./Components/Components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -8,6 +8,7 @@ const App = () => {
         <Router>
           <Navbar />
           <Routes>
+            <Route path="/" element={<Products />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </Router>

@@ -17,12 +17,12 @@ const Navbar = () => {
           }}
         />
         <h1
-          className="text-6xl font-black text-black tracking-tight leading-none cursor-pointer"
+          className="text-6xl font-black bg-gradient-to-r from-red-800 to-orange-800 bg-clip-text text-transparent tracking-tight leading-none cursor-pointer"
           onClick={() => {
             navigate("/");
           }}
         >
-          Products
+          Ecom
         </h1>
         <button
           type="button"
