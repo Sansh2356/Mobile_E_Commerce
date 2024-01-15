@@ -34,7 +34,7 @@ const Navbar = () => {
           <span>
             <FaCartPlus />
           </span>
-          <span className="font-black text-xl">Cart</span>
+          <span className="font-black text-xl">My Cart</span>
         </button>
       </nav>
     </>
