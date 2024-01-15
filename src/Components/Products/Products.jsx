@@ -1,7 +1,10 @@
 import ProductCard from "./ProductCard";
 import { storeProducts } from "../../data";
+import { useNavigate } from "react-router-dom";
 
 const Products = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <section className="min-h-screen w-full flex flex-col items-center bg-black">
@@ -15,6 +18,9 @@ const Products = () => {
               imgSrc={`/images/${product.img}`}
               name={product.title}
               amount={product.price}
+              clickhandler={() => {
+                navigate(`/product/${product.id}`);
+              }}
             />
           ))}
         </div>

@@ -1,9 +1,12 @@
 import { FaRupeeSign } from "react-icons/fa";
 
-const ProductCard = ({ imgSrc, name, amount }) => {
+const ProductCard = ({ imgSrc, name, amount, clickhandler = () => {} }) => {
   return (
     <>
-      <div className="border-2 border-solid border-yellow-400 flex flex-col items-center justify-between m-2 rounded-md overflow-hidden cursor-pointer bg-white">
+      <div
+        className="border-2 border-solid border-yellow-400 flex flex-col items-center justify-between m-2 rounded-md overflow-hidden cursor-pointer bg-white"
+        onClick={clickhandler}
+      >
         <img
           src={imgSrc}
           alt="pic"
