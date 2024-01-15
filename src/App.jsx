@@ -1,7 +1,17 @@
+import { Error, Navbar } from "./Components/Components";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 const App = () => {
   return (
     <>
-      <h1 className="text-9xl text-fuchsia-900">Hello World!</h1>
+      <main>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="*" element={<Error />} />
+          </Routes>
+        </Router>
+      </main>
     </>
   );
 };
